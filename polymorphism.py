@@ -22,15 +22,15 @@ plane = Plane()
 # plane.move()
 
 # LOOP WITH POLYMORPHISM
-vehicles = [
-    Car(), 
-    Boat(),
-    Plane()
-]
+# vehicles = [
+#     Car(), 
+#     Boat(),
+#     Plane()
+# ]
 
 # vehicle.move() is written only once, But Python decides which version of move() to call based on the actual object.
 # for vehicle in vehicles:
 #     vehicle.move()
 
-vehicle = Plane()
-vehicle.move()
+# vehicle = Boat()
+# vehicle.move()

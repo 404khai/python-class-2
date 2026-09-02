@@ -24,6 +24,7 @@ class Employee:
 
 # CHILD / SUB CLASS
 class SoftwareEngineer(Employee):
+        
     def __init__(self, name, salary, department, programmingLanguage):
         # super() means Go to the parent class and use its constructor. so this line calls Employee.__init__(...) from Employee parent class
         super().__init__(name, salary, department)
@@ -93,6 +94,7 @@ def start_work(employee):
 engineer = SoftwareEngineer("Greatman", 500000, "Engineering", "Python")
 pm = ProductManager("Rutherford", 600000, "Product", "Mobile App")
 
+print(engineer.get_bonus())
 engineer.totalSalary()
 # employees = [
 #     engineer,
@@ -112,4 +114,4 @@ engineer.totalSalary()
 # pm.work()
 
 # Polymorphism With a Function. You can also pass different objects into the same function.
-# start_work(engineer)
+start_work(pm)
